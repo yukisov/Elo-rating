@@ -5817,4 +5817,5 @@ button.close {
 body {
   margin: 50px; }
 
-/*# sourceMappingURL=app.css.map*/
+.mainForm {
+  margin-top: 50px; }

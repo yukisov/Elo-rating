@@ -4,37 +4,81 @@
   <meta charset="utf-8">
   <!-- Latest compiled and minified CSS -->
 
-
+  <script src="https://use.fontawesome.com/3492b17bff.js"></script>
   <link rel="stylesheet" href="/css/app.css">
 </head>
 <body>
-  Hello!!
+  <h1 class="text-center">Eloレーティング</h1>
+  <h2 class="text-center">対局によるレーティングの変化を計算する</h2>
 
+  <div class="mainForm">
 
-  <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="ratingYoursBefore" class="col-sm-3 control-label">あなたのレーティング</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="ratingYoursBefore" placeholder="例: 1500" value="1500">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ratingOther1Before" class="col-sm-3 control-label">相手のレーティング</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="ratingOther1Before" placeholder="例: 1500" value="1500">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-3 text-right">
+        </div>
+        <div class="col-sm-9">
+          <label class="radio-inline">
+            <input type="radio" name="result" id="resultWin" value="1" checked> 勝ち
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="result" id="resultLose" value="2"> 負け
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button type="button" id="btnSubmit" class="btn btn-success">対局後のレーティングを計算する</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="ratingYoursAfter" class="col-sm-3 control-label">あなたの対局後のレーティング</label>
+        <div class="col-sm-9">
+          <p class="form-control-static" id="ratingYoursAfter"></p>
+          <!--<input type="text" class="form-control" id="ratingYoursAfter" placeholder="">-->
+        </div>
+      </div>
+
+    </form>
+
   </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+  <div class="mainForm">
+    <hr>
+
+    <h3>参考</h3>
+    <ul>
+      <li>
+        <a href="https://ja.wikipedia.org/wiki/%E3%82%A4%E3%83%AD%E3%83%AC%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0">イロレーティング - Wikipedia</a>
+      </li>
+    </ul>
+
   </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
+
+  <hr>
+
+  <div class="row footer">
+    <div class="small-12 columns text-right">
+      <i class="fa fa-copyright"></i> 2016 <a href="http://yukisov.github.io/" target="_blank">Yuki.S</a> | <a href="https://github.com/yukisov/Elo-rating" target="_blank"><i class="fa fa-github-alt"></i> GitHub</a>
+    </div>
   </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-  </form>
 
   <script type="text/javascript" src="js/app.js" charset="utf-8"></script>
-
 
 </body>
 </html>
