@@ -1,7 +1,5 @@
 let $ = require('jquery');
 let ratingCalculator = require('./ratingCalculator');
-//require('./foo');
-
 
 $(function() {
   'use strict';
