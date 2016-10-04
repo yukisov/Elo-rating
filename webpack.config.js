@@ -18,6 +18,16 @@ module.exports = [{
         exclude: /node_modules/,
         loader: "eslint-loader"
       }
+    ],
+    loaders: [
+      {
+        test: /\.js$/,
+        loader: 'babel',
+        query: {
+          presets: ['es2015'],
+          compact: false
+        }
+      }
     ]
   },
   plugins: [
