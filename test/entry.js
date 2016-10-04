@@ -1,1 +1,2 @@
-require('./ratingCalculator');
+import 'babel-polyfill';
+import './ratingCalculator';

@@ -1,10 +1,11 @@
 /*global describe*/
 /*global it*/
-var expect = require('chai').expect,
-    ratingCalculator = require('../src/js/ratingCalculator');
+import 'babel-polyfill'
+
+const expect = require('chai').expect;
+import * as ratingCalculator from '../src/js/ratingCalculator';
 
 describe('ratingCalculator module', function(){
-  'use strict';
 
   it ('should get right value', function() {
 

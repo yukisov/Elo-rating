@@ -23,8 +23,9 @@ module.exports = [{
       {
         test: /\.js$/,
         loader: 'babel',
+        exclude: /node_modules/,
         query: {
-          presets: ['es2015'],
+          presets: ['es2015', 'stage-2'],
           compact: false
         }
       }
@@ -36,6 +37,14 @@ module.exports = [{
         jQuery: "jquery",
         $: "jquery"
     })
+    //new webpack.optimize.CommonsChunkPlugin('common.js'),
+    //new webpack.optimize.DedupePlugin(),
+    /* https://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugina */
+    /*, new webpack.optimize.UglifyJsPlugin({
+      compress:true,
+      debug:true
+    }),*/
+    //new webpack.optimize.AggressiveMergingPlugin()
   ],
   resolve: {
     // require()する時に拡張子を省略可能にします。

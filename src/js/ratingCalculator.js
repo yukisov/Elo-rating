@@ -1,6 +1,4 @@
-module.exports = {
-  calcRating: function(ratingYoursBefore, ratingOtherBefore, result) {
-    'use strict';
+export function calcRating(ratingYoursBefore, ratingOtherBefore, result) {
 
     const K = 12; // 16
     ratingYoursBefore = parseInt(ratingYoursBefore, 10);
@@ -15,18 +13,19 @@ module.exports = {
     // 新しいレーティング
     let Rn = ratingYoursBefore + (K * (Sa - Ea));
 
-    console.log('ratingYoursBefore', ratingYoursBefore);
-    console.log('ratingOtherBefore', ratingOtherBefore);
-    console.log('result', result);
-    console.log('Ea', Ea);
-    console.log('Sa', Sa);
-    console.log('Rn', Rn);
+    console.log('ratingYoursBefore', ratingYoursBefore,
+        'ratingOtherBefore', ratingOtherBefore,
+        'result', result,
+        'Ea', Ea,
+        'Sa', Sa,
+        'Rn', Rn
+    );
 
     return Rn;
-  },
-  round(i) {
-    'use strict';
+}
+
+export function round(i) {
 
     return Math.round(i*10)/10;
-  }
-};
+
+}

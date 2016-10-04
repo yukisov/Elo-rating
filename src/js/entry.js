@@ -1,8 +1,7 @@
-let $ = require('jquery');
-let ratingCalculator = require('./ratingCalculator');
+import $ from 'jquery';
+import * as ratingCalculator from './ratingCalculator';
 
 $(function() {
-  'use strict';
 
   $('#btnSubmit').on('click', function() {
   
