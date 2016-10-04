@@ -2,7 +2,7 @@
 /*global it*/
 import 'babel-polyfill'
 
-const expect = require('chai').expect;
+import { expect } from 'chai';
 import * as ratingCalculator from '../src/js/ratingCalculator';
 
 describe('ratingCalculator module', function(){
